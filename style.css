@@ -1,0 +1,103 @@
+/* arrière-plan principal */
+body {
+  background-color: rgb(43, 43, 43);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles pour l'interface de chat */
+.container {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  background-color: rgb(58, 58, 58);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteneur-chat {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  overflow-y: auto;
+  border: 1px solid #ffffff00;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(158, 158, 158, 0);
+}
+
+.messages-chat {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.saisie-chat {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.saisie-chat input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #000; /* Ensure input text is visible */
+  background-color: #fff; /* Ensure input background is white for readability */
+}
+
+.saisie-chat button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #d62519;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles CSS pour les messages de chat */
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 70%;
+  border-radius: 10px;
+  clear: both;
+  overflow-wrap: break-word;
+  color: #000; /* Ensure message text is visible */
+}
+
+.message.envoye {
+  float: right;
+  background-color: #E0E0E0;
+}
+
+.message.recu {
+  float: left;
+  background-color: #E0E0E0;
+}
+
+.info-message {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.expediteur-message {
+  font-weight: bold;
+  color: #000; /* Ensure sender name is visible */
+}
+
+.heure-message {
+  color: #666; /* Use a lighter color for timestamps */
+  font-size: 0.8em;
+}
+
+.titre {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+}
